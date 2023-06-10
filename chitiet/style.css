@@ -1,0 +1,416 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #3399FF;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+}
+.menu-icon{
+    width: 20px;
+    height: 20px;
+}
+#menu a{
+    display: block;
+}
+#menu span{
+    margin-left: 5px;
+}
+.menu-an1, .menu-an2{
+    display: none;
+    margin-left: 10px;
+}
+.tour-trong:hover .menu-an1{
+    display: block;
+}
+.tour-trong:hover>a{
+    color: #3399FF;
+}
+.tour-ngoai:hover .menu-an2{
+    display: block;
+}
+.tour-ngoai:hover>a{
+    color: #3399FF;
+}
+h2{
+    padding: 10px;
+    color: #3399FF;
+}
+hr{
+    height: 1px;
+    background-color: #3399FF;
+}
+.fa{
+    color: orange;
+}
+.rate{
+    padding: 10px;
+}
+@media screen and (min-width: 240px) {
+    .logo{
+        width: 45%;
+        height: 45%;
+    }
+    .logo{
+        margin-left: 19%;
+    }
+    #menu{
+        display: none;
+        position: absolute;
+        background-color: #3399FF;
+        width: 50%;
+        padding: 10px;
+        line-height: 25px;
+    }
+    #menu a:hover{
+        color: white
+    }
+    .tour-ngoai:hover>a{
+        color: white;
+    }
+    .tour-trong:hover>a{
+        color: white;
+    }
+    .menu-icon:hover{
+        color: #3399FF;
+    }
+    section>img{
+        width: 100%;
+        height: 100%;
+    }
+    figcaption>div>img{
+        width: 10%;
+        height: 10%;
+    }
+    figcaption>div{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    section:first-child{
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+    figcaption>div>:first-child{
+        margin-right: 10px;
+    }
+    section:first-child{
+        border: none;
+    }
+    section{
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        border: dashed 3px #3399FF;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    aside{
+        width: 100%;
+        line-height: 20px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;;
+        background-color: #080808cc;
+        color: white;
+    }
+    aside>h2{
+        text-align: center;
+    }
+    aside:hover div{
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-template-areas: 
+        'item1 item1'
+        'item2 item3'
+        'item4 item4'
+        'item5 item5';
+        width: 100%;
+        padding: 10px;
+    }
+    aside>div{
+        display: none;
+    }
+    aside>div>div:nth-child(1){grid-area: item1;display: inline;}
+    aside>div>div:nth-child(2){grid-area: item2;>p{margin-right: 5px;}}
+    aside>div>div:nth-child(3){grid-area: item3;>p{margin-right: 5px;}}
+    aside>div>div:nth-child(4){grid-area: item4;>p>strong{color:red;margin-left: 5px;}}
+    aside>div>div:nth-child(5){grid-area: item5;}
+    aside>div>div:last-child>button{
+        margin-right: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+
+    }
+    aside button:hover{
+        background-color: #3399FF;
+        color: white;
+    }
+    .giare img{
+        width: 100%;
+        height: 100%;
+    }
+    .giare{
+        width: 100%;
+        background-color: rgba(204, 203, 203, 0.6);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+        text-align: start;
+    }
+    .giare>div>span>img{
+        width: 100%;
+        height: 100%;
+    }
+    .giare>div{
+        overflow: hidden;
+        width: 100%;
+        height: 220px;
+    }
+    .giare>div>img:hover{
+        animation: zoom 6s linear infinite alternate;
+    }
+    .giare>figcaption{
+        padding: 10px;
+    }
+    .giare>figcaption img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .giare>figcaption>p>strong{
+        color: red;
+        margin-left: 10px;
+    }
+    .giare>figcaption>div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .giare>figcaption>div>button{
+        background-image: linear-gradient(to right,#3399FF, white);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .giare>figcaption>div>button:hover{
+        color: white;
+        background-image: linear-gradient(to left,red,blue);
+    }
+    .giare>div>div>img{
+        width: 20%;
+        height: 80%;
+    }
+    .giare>div>div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(128, 128, 128, 0.555);
+        color: white;
+        width: 35%;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .giare>div>div:nth-child(2){
+        bottom: 45px;
+    }
+    .giare>div>div:nth-child(3){
+        bottom: 265px;
+        right: -65%;
+    }
+    .giare>div>div:nth-child(4){
+        bottom: 305px;
+        left: 0;
+    }
+    footer{
+        text-align: start;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: rgba(128, 128, 128, 0.2);
+    }
+    footer>div:first-child{
+        display: none;
+    }
+    .mangxahoi img{
+        width: 10%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .doitac img{
+        width: 15%;
+        height: 15%;
+        margin-right: 5%;
+    }
+    .thuvienanh>div{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .thuvienanh img{
+        width: 100%;
+        height: 200px;
+    }
+    .thuvienanh img:hover{
+        overflow: hidden;
+        transform: scale(1.2,1.2);
+        transition: 1s;
+    }
+    h2 img{
+        width: 7%;
+        height: 7%;
+        margin-right: 10px;
+    }
+    .danhgia{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    }
+    .danhgia>div{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWtBmneTFb6WOAK_MBeUbZTrvCWM0URfMeg&usqp=CAU);
+        background-size: 100% 100%;
+    }
+    .danhgia img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    section:first-child>figcaption{
+        display: inline-flex;
+    }
+    section:first-child>figcaption img{
+        width: 15%;
+        height: 30%;
+        margin-right: 10px;
+    }
+    .tour-trong:hover >a{
+        color: #3399FF;
+    }
+    .tour-ngoai:hover >a{
+        color: #3399FF;
+    }
+    body>h2, .rate, section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header{
+        background-color: rgba(128, 128, 128, 0.438);
+    }
+    .menu-icon{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+        height: 20%;
+        margin-left: 5%;
+    }
+    #menu{
+        display: inline-flex;
+        justify-content: space-around;
+        width: 60%;
+        top: 0px;
+        right: 5%;
+        background-color: rgba(255, 255, 255, 0.699);
+    }
+    #menu a:hover{
+        color: #3399FF;
+    }
+    .tour-giare>div{
+        display: grid;
+        grid-template-areas: 
+        'giare1 giare2'
+        'giare3 giare4';
+        grid-gap: 30px;
+    }
+    .giare:first-child{grid-area: giare1;}
+    .giare:nth-child(2){grid-area: giare2;}
+    .giare:nth-child(3){grid-area: giare3;}
+    .giare:last-child{grid-area: giare4;}
+    .lienhe{grid-area: lienhe;}
+    .thongtin{grid-area: thongtin;}
+    .sanpham{grid-area: sanpham;}
+    .mangxahoi{grid-area: mangxahoi;}
+    .doitac{grid-area: doitac;margin-top: -60px;}
+    .thuvienanh{
+        display: none;
+    }
+    footer{
+        padding: 0 5% 0 5%;
+        display: grid;
+        grid-template-areas: 
+        'lienhe sanpham thongtin mangxahoi'
+        'lienhe sanpham thongtin doitac';
+    }
+}
+@media screen and (min-width: 1024px) {
+    .logo, body>h2,#menu, .rate, section{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    section:first-child{
+        margin-top: -26.25%;
+        padding: 10px;
+    }
+    #menu{
+        width: 50%;
+    }
+    body>h2,section{
+        width: 50%;
+    }   
+    aside{
+        right: 10%;
+        top: 10%;
+        left: 65%;
+        position: sticky;
+        width: 25%;
+        height: 55%;
+        background-color: rgba(128, 128, 128, 0.438);
+        background-image: linear-gradient(to right, #96deda  , #50c9c3);
+        color: black;
+    }
+    aside>h2{
+        margin-bottom: -20px;
+        color: black;
+    }
+    aside div{
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-template-areas: 
+        'item1 item1'
+        'item2 item3'
+        'item4 item4'
+        'item5 item5';
+        width: 100%;
+        padding: 10px;
+    }
+    footer{
+        padding: 0 10% 0 10%;
+        display: grid;
+        grid-template-areas: 
+        'lienhe sanpham thongtin mangxahoi'
+        'lienhe sanpham thongtin doitac';
+    }
+}

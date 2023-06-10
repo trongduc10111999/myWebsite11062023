@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Du_Lich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/person-svgrepo-com.svg" alt="" onclick="location.href='dangnhap/dangnhap.html'">
+    <img src="img/cart-add-buy-svgrepo-com.svg" alt="" onclick="location.href='thanhtoan/thanhtoan.html'">
+    <header>
+        <img class="menu-icon" src="img/menu-svgrepo-com.svg" onclick="menu(this)" alt="">
+        <img class="logo" src="img/logo.png" alt="">
+    </header>
+    <div class="banner">
+        <div><img id="banner-img" src="img/anh2.jpg" alt=""></div>
+        <h1>"Một chuyến đi<br>vô vàn kỷ niệm"</h1>
+        <button class="next" onclick="next()">></button>
+        <button class="prev" onclick="prev()"><</button>
+    </div>
+    <nav id="menu">
+        <a href="">Trang chủ</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Tin tức</a>
+        <div class="tour-trong">
+            <a href="">Tour trong nước<span>></span></a>  
+            <div class="menu-an1">
+                <a href="">Hà Nội</a>
+                <a href="">Nha Trang</a>
+                <a href="">Phú Quốc</a>
+            </div>        
+        </div>
+        <div class="tour-ngoai">
+            <a href="">Tour quốc tế<span>></span></a>
+            <div class="menu-an2">
+                <a href="">Nhật Bản</a>
+                <a href="">Hàn Quốc</a>
+                <a href="">Thái Lan</a>
+            </div> 
+        </div>
+        <a href="">Liên hệ</a>
+    </nav>
+    <div class="search">
+        <div class="diemdi">
+            <img src="img/pin-destination-svgrepo-com.svg" alt="">
+            <input type="text" name="" id="" placeholder="Điểm đi">
+        </div>
+        <div class="diemden">
+            <img src="img/pin-destination-svgrepo-com.svg" alt="">
+            <input type="text" name="" id="" placeholder="Điểm đến">
+        </div>
+        <input type="submit" value="Tìm kiếm">
+    </div>
+    <main>
+        <section class="uudai">
+            <h2><img src="img/price-tag-discount-svgrepo-com.svg" alt=""><strong>ƯU ĐÃI</strong></h2>
+            <hr>
+            <img src="img/uudai.webp" alt="">
+            <div class="uudai-info">
+                <img class="uudai1" src="img/ks.webp" alt="">
+                <img class="uudai2" src="img/tour.webp" alt="">
+                <img class="uudai3" src="img/thanhtoan1.webp" alt="">
+                <img class="uudai4" src="img/thanhtoan2.webp" alt="">
+            </div>
+        </section>
+        <section class="diadiemnoibat"> 
+            <h2><img src="img/thumb-up.png" alt=""><strong>ĐỊA ĐIỂM NỔI BẬT</strong></h2>
+            <hr>
+            <div class="noibat">
+                <img class="noibat-img" src="img/dalat.jpg" alt="">
+                <figcaption>
+                    <p><img src="img/people.png" alt="">Hơn 500 tour đã được đặt</p>
+                    <p><img src="img/price-tag.png" alt="">1.000.000vnd - 3.000.000vnd</p>
+                    <p><img src="img/hotel.png" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p><img src="img/food-dinner-svgrepo-com.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <button><a href="">Xem thêm</a></button>
+                </figcaption>
+            </div>
+            <div class="noibat">
+                <img class="noibat-img" src="img/phuquoc.jpg" alt="">
+                <figcaption>
+                    <p><img src="img/people.png" alt="">Hơn 500 tour đã được đặt</p>
+                    <p><img src="img/price-tag.png" alt="">1.000.000vnd - 3.000.000vnd</p>
+                    <p><img src="img/hotel.png" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p><img src="img/food-dinner-svgrepo-com.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <button><a href="">Xem thêm</a></button>
+                </figcaption>
+            </div>
+            <div class="noibat">
+                <img class="noibat-img" src="img/sapa.jpg" alt="">
+                <figcaption>
+                    <p><img src="img/people.png" alt="">Hơn 500 tour đã được đặt</p>
+                    <p><img src="img/price-tag.png" alt="">1.000.000vnd - 3.000.000vnd</p>
+                    <p><img src="img/hotel.png" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p><img src="img/food-dinner-svgrepo-com.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <button><a href="">Xem thêm</a></button>
+                </figcaption>
+            </div>
+            <div class="noibat">
+                <img class="noibat-img" src="img/vungtau.jpg" alt="">
+                <figcaption>
+                    <p><img src="img/people.png" alt="">Hơn 500 tour đã được đặt</p>
+                    <p><img src="img/price-tag.png" alt="">1.000.000vnd - 3.000.000vnd</p>
+                    <p><img src="img/hotel.png" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p><img src="img/food-dinner-svgrepo-com.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <button><a href="">Xem thêm</a></button>
+                </figcaption>
+            </div>
+        </section>
+        <section class="danhlam">
+            <h2><img src="img/airplane-svgrepo-com.svg" alt="">DANH LAM THẮNG CẢNH</h2>
+            <hr>
+            <div class="nuocngoai">
+                <img src="img/thapeiffel.png" alt="">
+                <figcaption>
+                    <h3>Tháp Eiffel</h3>
+                    <i>Tháp Eiffel (tiếng Pháp: Tour Eiffel) là một công trình kiến trúc bằng sắt nằm trên 
+                        công viên Champ-de-Mars, cạnh sông Seine, thành phố Paris.</i>
+                </figcaption>
+            </div>
+            <div class="nuocngoai">
+                <figcaption>
+                    <h3>Tháp Eiffel</h3>
+                    <i>Tháp Eiffel (tiếng Pháp: Tour Eiffel) là một công trình kiến trúc bằng sắt nằm trên 
+                        công viên Champ-de-Mars, cạnh sông Seine, thành phố Paris.</i>
+                </figcaption>
+                <img src="img/caudoi.png" alt="">
+            </div>
+            <div class="nuocngoai">
+                <img src="img/pantheon.png" alt="">
+                <figcaption>
+                    <h3>Tháp Eiffel</h3>
+                    <i>Tháp Eiffel (tiếng Pháp: Tour Eiffel) là một công trình kiến trúc bằng sắt nằm trên 
+                        công viên Champ-de-Mars, cạnh sông Seine, thành phố Paris.</i>
+                </figcaption>
+            </div>
+            <div class="nuocngoai">
+                <figcaption>
+                    <h3>Tháp Eiffel</h3>
+                    <i>Tháp Eiffel (tiếng Pháp: Tour Eiffel) là một công trình kiến trúc bằng sắt nằm trên 
+                        công viên Champ-de-Mars, cạnh sông Seine, thành phố Paris.</i>
+                </figcaption>
+                <img src="img/nhahatopera.png" alt="">
+
+            </div>
+        </section>
+        <section class="tour-giare">
+            <h2><img src="img/tool-for-saving-money-svgrepo-com.svg" alt=""><strong>TOUR GIÁ RẺ</strong></h2>
+            <hr>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-dong-bac-5n4d-ha-giang-dong-van-cao-bang-thac-ban-gioc-lang-son_du-lich-Saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Cao Bằng</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-phu-quoc-4-ngay-gia-tot-nhat-he-khoi-hanh-tu-sai-gon_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Phú Quốc</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-nha-trang-da-lat-4-ngay-gia-uu-dai-he-tu-tp-hcm_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Nha Trang</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-mien-bac-ha-noi-ninh-binh-ha-long-yen-tu-sapa-fansipan-6n5d-gia-tot-tu-sai-gon_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Hạ Long</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+        </section>
+        <section class="xuhuong">
+            <h2><img src="img/sun-black-shape-of-a-circle-with-triangles-svgrepo-com.svg" alt="">XU HƯỚNG</h2>
+            <hr>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-dong-bac-5n4d-ha-giang-dong-van-cao-bang-thac-ban-gioc-lang-son_du-lich-Saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Cao Bằng</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-phu-quoc-4-ngay-gia-tot-nhat-he-khoi-hanh-tu-sai-gon_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Phú Quốc</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-nha-trang-da-lat-4-ngay-gia-uu-dai-he-tu-tp-hcm_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Nha Trang</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="giare">
+                <div>
+                    <img src="img/tour-du-lich-mien-bac-ha-noi-ninh-binh-ha-long-yen-tu-sapa-fansipan-6n5d-gia-tot-tu-sai-gon_saoviettravel.jpg" alt="">
+                    <div>
+                        <img src="img/location-pin-navigation-destination-maps-svgrepo-com.svg" alt="">
+                        <p><strong>Hạ Long</strong></p>
+                    </div>
+                    <div>
+                        <p><strong>99+ quan tâm</strong></p>
+                        <img src="img/heart-lover-svgrepo-com.svg" alt="">
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <figcaption>
+                    <a href="chitiet/chitiet.html">Tour Đông Bắc 5N4Đ: Hà Giang – Cao Bằng – Thác Bản Giốc – Lạng Sơn từ Sài Gòn</a>
+                    <p><img src="img/clock.png" alt="">5 ngày 4 đêm</p>
+                    <p><img src="img/destination.png" alt="">Máy bay và xe du lịch</p>
+                    <p><img src="img/calendar.png" alt="">20/06/2023</p>
+                    <p><img src="img/price-tag.png" alt=""><del>5.200.000vnd</del><strong>2.300.000vnd</strong></p>
+                    <div>
+                        <button onclick="location.href='thanhtoan/thanhtoan.html'">Đặt ngay</button>
+                        <button>Thêm vào giỏ hàng</button>
+                    </div>
+                </figcaption>
+            </div>
+        </section>
+        <section class="khachhang">
+            <h2><img src="img/talk-svgrepo-com.svg" alt="">KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI</h2>
+            <hr>
+            <div class="kh-danhgia">
+                <div class="danhgia">
+                    <div>
+                        <img src="img/danhgia1.jpg" alt="">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <i>Huế: "Dịch vụ xịn xò thật sự, nhân viên tư vấn nhiệt tình, giá cả phù hợp. Nếu có dịp mình nhất định sẽ đặt lại!"</i>
+                </div>
+                <div class="danhgia">
+                    <div>
+                        <img src="img/danhgia4.jpg" alt="">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <i>Linh: "Dịch vụ xịn xò thật sự, nhân viên tư vấn nhiệt tình, giá cả phù hợp. Nếu có dịp mình nhất định sẽ đặt lại!"</i>
+                </div>
+                <div class="danhgia">
+                    <div>
+                        <img src="img/danhgia6.jpg" alt="">
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <i>Lisa: "Dịch vụ xịn xò thật sự, nhân viên tư vấn nhiệt tình, giá cả phù hợp. Nếu có dịp mình nhất định sẽ đặt lại!"</i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <div>
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="lienhe">
+            <h2>Liên hệ</h2><hr>
+            <p><strong>Số điện thoại</strong>: 033333333</p>
+            <p><strong>Email</strong>: gotravel@gmail.com</p>
+            <p><strong>Địa chỉ</strong>: 60, phường Linh Tây, tp.Thủ Đức, HCM</p>
+            <p><strong>Hotline</strong>: 180088888</p>
+        </div>
+        <div class="sanpham">
+            <h2>Sản phẩm</h2><hr>
+            <p><a href="">Cao cấp</a></p>
+            <p><a href="">Tiêu chuẩn</a></p>
+            <p><a href="">Tiết kiệm</a></p>
+            <p><a href="">Giá rẻ</a></p>
+            <p><a href="">Combo</a></p>
+        </div>
+        <div class="thongtin">
+            <h2>Thông tin</h2>
+            <hr>
+            <p><a href="">Tạp chí du lịch</a></p>
+            <p><a href="">Cẩm nang du lịch</a></p>
+            <p><a href="">Tin tức</a></p>
+            <p><a href="">Chính sách riêng tư</a></p>
+            <p><a href="">Thỏa thuận sử dụng</a></p>
+        </div>
+        <div class="mangxahoi">
+            <h2>Mạng xã hội</h2><hr>
+            <img src="img/youtube-color-svgrepo-com.svg" alt="">
+            <img src="img/facebook-color-svgrepo-com.svg" alt="">
+            <img src="img/twitter-color-svgrepo-com.svg" alt="">
+            <img src="img/instagram.png" alt="">
+            <img src="img/tik-tok.png" alt="">
+        </div>
+        <div class="doitac">
+            <h2>Đối tác thanh toán</h2><hr>
+            <img src="img/visa_icon.png" alt="">
+            <img src="img/mastercard_curved_icon.png" alt="">
+            <img src="img/vnpay-logo-inkythuatso-01.jpg" alt="">
+        </div>
+        <div class="thuvienanh">
+            <h2>Thư viện ảnh</h2><hr>
+            <div><img src="img/tv1.jpg" alt=""></div>
+            <div><img src="img/tv2.jpg" alt=""></div>
+            <div><img src="img/tv3.jpg" alt=""></div>
+            <div><img src="img/tv4.jpg" alt=""></div>
+            <div><img src="img/tv5.jpg" alt=""></div>
+            <div><img src="img/tv6.jpg" alt=""></div>
+            <div><img src="img/tv7.jpg" alt=""></div>
+            <div><img src="img/tv8.jpg" alt=""></div>
+            <div><img src="img/tv9.jpg" alt=""></div>
+            <div><img src="img/tv10.jpg" alt=""></div>
+            <div><img src="img/tv11.jpg" alt=""></div>
+            <div><img src="img/tv12.jpg" alt=""></div>
+        </div>       
+    </footer>
+</body>
+</html>
+<script src="code.js"></script>
