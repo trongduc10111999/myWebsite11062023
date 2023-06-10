@@ -8,7 +8,7 @@ function menu(x){
         x.src = 'img/menu-svgrepo-com.svg';
     }
 }
-var arr = ['img/anh2.jpg','img/anh3.jpg','img/anh5.jpg','img/anh6.jpg','img/anh7.jpg','img/anh8.jpg'];
+var arr = ['anh2.jpg','anh3.jpg','anh5.jpg','anh6.jpg','anh7.jpg','anh8.jpg'];
 var index = 0;
 function next(){
     index++;
@@ -24,7 +24,7 @@ function prev(){
     }
     document.getElementById('banner-img').src = arr[index];
 }
-setInterval('next()', 6975);
+setInterval('next()', 7000);
 var diaDiem = document.querySelectorAll('.noibat');
 console.log(diaDiem[0].children);
 
