@@ -2,10 +2,10 @@ function menu(x){
     var menu = document.getElementById('menu');
     if (menu.style.display == 'none'){
         menu.style.display = 'block';
-        x.src = 'img/menu-svgrepo-com1.svg';
+        x.src = '/menu-svgrepo-com1.svg';
     }else{
         menu.style.display = 'none';
-        x.src = 'img/menu-svgrepo-com.svg';
+        x.src = '/menu-svgrepo-com.svg';
     }
 }
 var arr = ['anh2.jpg','anh3.jpg','anh5.jpg','anh6.jpg','anh7.jpg','anh8.jpg'];
